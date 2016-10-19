@@ -65,7 +65,9 @@ for company_code in company_codes:
 
 for code in correct_code:
     data = quandl.get(code)
-    data.to_csv("./datasets/"+ str(company_codes[correct_code.index(code)]+".csv"))
+    index = correct_code.index(code)
+    data.to_csv("./datasets/"+ str(company_codes[index]+".csv"))
+    print("Total number of datasets downloaded: " + str(index) + "out of: " + str(len(correct_code)))
     del data
 
 
