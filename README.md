@@ -1,1 +1,1 @@
-# Stock_Market_Predictoin
+# Stock_Market_Prediction
